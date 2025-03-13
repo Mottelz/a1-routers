@@ -11,7 +11,7 @@ const getBookById = async (id) => {
 };
 
 const addBook = async ({author, title, isbn}) => {
-    const stmnt = db.prepare("INSERT INTO books VALUES (@author, @title, @isbn);");
+    const stmnt = db.prepare("INSERT INTO books (author, title, isbn) VALUES (@author, @title, @isbn);");
     return await stmnt.run({author, title, isbn});
 };
 

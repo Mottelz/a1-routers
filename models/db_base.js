@@ -1,4 +1,4 @@
-const db = require("better-sqlite3")("./games.db", { verbose: console.log });
+const db = require("better-sqlite3")("./books.db", { verbose: console.log });
 const fs = require("fs");
 
 const initDB = () => {
